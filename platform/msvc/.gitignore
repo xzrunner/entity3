@@ -1,0 +1,5 @@
+entity3/
+projects/*
+
+!projects/entity3.vcxproj
+!projects/entity3.vcxproj.filters

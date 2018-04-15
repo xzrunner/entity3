@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="component">
+      <UniqueIdentifier>{241f5b86-17eb-4bdf-8e08-3ba1917850a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="component\asset">
+      <UniqueIdentifier>{6d30ca12-1fb0-4c16-bcde-d1c39758f31d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="component\geo">
+      <UniqueIdentifier>{13501c5c-87e1-4e7b-9b0a-6b464b05dda8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system">
+      <UniqueIdentifier>{bc322a19-27fc-435b-9118-c7bb526e3e2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system\geo">
+      <UniqueIdentifier>{7182c63a-d75b-47b8-be30-ba79330d22ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\entity3\CompMesh.h">
+      <Filter>component\asset</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\entity3\CompModel.h">
+      <Filter>component\asset</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\entity3\CompTransform.h">
+      <Filter>component\geo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\entity3\SysTransform.h">
+      <Filter>system\geo</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\SysTransform.cpp">
+      <Filter>system\geo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\include\entity3\SysTransform.inl">
+      <Filter>system\geo</Filter>
+    </None>
+  </ItemGroup>
+</Project>
