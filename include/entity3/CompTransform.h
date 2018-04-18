@@ -1,13 +1,13 @@
 #pragma once
 
-#include <ecsx/Component.h>
+#include <entity0/Component.h>
 #include <SM_Vector.h>
 #include <SM_Quaternion.h>
 
 namespace e3
 {
 
-struct CompPosition : public ecsx::Component
+struct CompPosition : public e0::Component
 {
 	CompPosition(const sm::vec3& pos) : pos(pos) {}
 
@@ -15,7 +15,7 @@ struct CompPosition : public ecsx::Component
 
 }; // CompPosition
 
-struct CompAngle : public ecsx::Component
+struct CompAngle : public e0::Component
 {
 	CompAngle(const sm::Quaternion& angle) : angle(angle) {}
 
@@ -23,7 +23,7 @@ struct CompAngle : public ecsx::Component
 
 }; // CompAngle
 
-struct CompScale : public ecsx::Component
+struct CompScale : public e0::Component
 {
 	CompScale(const sm::vec3& scale) : scale(scale) {}
 

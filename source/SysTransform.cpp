@@ -3,7 +3,7 @@
 namespace e3
 {
 
-void SysTransform::SetPosition(ecsx::World& world, const ecsx::Entity& entity, const sm::vec3& pos)
+void SysTransform::SetPosition(e0::World& world, const e0::Entity& entity, const sm::vec3& pos)
 {
 	if (world.HasComponent<CompPosition>(entity)) {
 		auto& cpos = world.GetComponent<CompPosition>(entity);
@@ -13,7 +13,7 @@ void SysTransform::SetPosition(ecsx::World& world, const ecsx::Entity& entity, c
 	}
 }
 
-void SysTransform::SetAngle(ecsx::World& world, const ecsx::Entity& entity, const sm::Quaternion& angle)
+void SysTransform::SetAngle(e0::World& world, const e0::Entity& entity, const sm::Quaternion& angle)
 {
 	if (world.HasComponent<CompAngle>(entity)) {
 		auto& cangle = world.GetComponent<CompAngle>(entity);
@@ -23,7 +23,7 @@ void SysTransform::SetAngle(ecsx::World& world, const ecsx::Entity& entity, cons
 	}
 }
 
-void SysTransform::SetScale(ecsx::World& world, const ecsx::Entity& entity, const sm::vec3& scale)
+void SysTransform::SetScale(e0::World& world, const e0::Entity& entity, const sm::vec3& scale)
 {
 	if (world.HasComponent<CompScale>(entity)) {
 		auto& coffset = world.GetComponent<CompScale>(entity);
