@@ -5,7 +5,7 @@
 
 #include <memory>
 
-namespace model { class Model; }
+namespace model { struct Model; }
 
 namespace e3
 {
